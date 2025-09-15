@@ -152,7 +152,7 @@ export function PricingSection() {
         </div>
 
         {/* Pricing Cards */}
-        <div className="flex gap-4 mx-auto mb-8 max-w-4xl">
+        <div className="flex flex-col lg:flex-row gap-4 mx-auto mb-8 max-w-4xl">
           {pricingPlans.map((plan, index) => (
             <PricingCard key={index} plan={plan} />
           ))}

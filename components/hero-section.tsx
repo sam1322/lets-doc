@@ -851,8 +851,8 @@ const solutionSlides: SolutionSlide[] = [
       'Appointment Management',
       'Reminders and Follow-Up',
       'Billing and Service Management',
-      'Campaigns for camps/ offers',
-      'Additional ₹ e.g. Teleconsults'
+      // 'Campaigns for camps/ offers',
+      // 'Additional ₹ e.g. Teleconsults'
     ],
     color: 'bg-emerald-600',
     buttonText1: 'View Features',
@@ -979,10 +979,10 @@ export function HeroSection() {
               {solutionSlides.map((slide, index) => (
                 <div
                   key={slide.id}
-                  className="min-w-full flex-shrink-0" // Each slide takes full width
+                  className="min-w-full1 w-full flex-shrink-0" // Each slide takes full width
                 >
                   {/* Slide Content */}
-                  <div className="grid lg:grid-cols-2 gap-12 items-center px-4">
+                  <div className="grid lg:grid-cols-2 gap-12 items-center px-4 pr-0">
                     {/* Left Side - Interactive Card */}
                     <div className={`hidden transition-all duration-700 transform ${index === currentSlide && !isSliding
                       ? 'opacity-100 translate-x-0 scale-100'

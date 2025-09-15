@@ -105,7 +105,7 @@ const UdetiClinicSection: React.FC = () => {
                     Transforming Healthcare by the Numbers
                 </h2>
 
-                <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 px-4 lg:px-0 pb-4">
                     {stats.map((stat, index) => (
                         <StatCard
                             key={index}
