@@ -69,7 +69,7 @@ function PricingCard({ plan }: { plan: PricingPlan }) {
     <Card className={`relative bg-white rounded-2xl shadow-lg border-t-4 ${plan.borderColor} p-8 w-full mx-auto`}>
       {/* Popular Badge */}
       {plan.isPopular && (
-        <Badge className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-emerald-500 hover:bg-emerald-500 text-white px-4 py-1">
+        <Badge className="absolute -top-3 -right-2 transform -tr2anslate-x-1/2 bg-emerald-500 hover:bg-emerald-500 text-white px-4 py-1 rounded-full">
           ⭐ Most Popular
         </Badge>
       )}
@@ -94,7 +94,7 @@ function PricingCard({ plan }: { plan: PricingPlan }) {
         {plan.originalPrice && plan.savings && (
           <div className="flex items-center justify-center gap-2 mt-2">
             <span className="text-gray-400 line-through text-sm">{plan.originalPrice}</span>
-            <span className="text-emerald-600 text-sm font-medium">{plan.savings}</span>
+            <span className="text-emerald-600 text-sm font-medium bg-emerald-100/80 p-3 rounded-full py-1">{plan.savings}</span>
           </div>
         )}
       </div>

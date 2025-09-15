@@ -104,20 +104,28 @@
 
 
 // app/page.tsx
+import { ContactUsSection } from '@/components/contact-us-section'
+import DoctorTestimonials from '@/components/doctor-testimonials'
+import { Footer } from '@/components/footer'
 import { Header } from '@/components/header'
 import { HeroSection } from '@/components/hero-section'
 import { PricingSection } from '@/components/pricing-section'
+import UdetiClinicSection from '@/components/udeti-clinic-section'
 import { WhyUdetiSection } from '@/components/why-udeti-section'
 
 export default function HomePage() {
   return (
     <div className="min-h-screen">
       <Header />
-      <main>
+      <main className=''>
         <HeroSection />
         <WhyUdetiSection />
         <PricingSection/>
+        <ContactUsSection/>
+        <UdetiClinicSection/>
+        <DoctorTestimonials/>
       </main>
+      <Footer/>
     </div>
   )
 }

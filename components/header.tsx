@@ -1,19 +1,22 @@
 // components/header.tsx
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
+import LetsGoLogo from "@/public/letsdoc-logo.png"
+import Image from 'next/image'
 
 export function Header() {
     return (
-        <header className="bg-emerald-600 text-white">
+        <header className="bg-emerald-600 text-white sticky top-0 z-30" >
             <div className="container mx-auto px-4 py-4">
                 <div className="flex items-center justify-between">
                     {/* Logo */}
-                    <div className="flex items-center space-x-2">
+                    <Image src={LetsGoLogo.src} alt="logo" width={300} height={300} className='max-w-[120px]'/>
+                    {/* <div className="flex items-center space-x-2">
                         <div className="text-2xl font-bold text-emerald-200">
                             LetsDoc
                         </div>
                         <div className="w-6 h-6 bg-yellow-400 rounded transform rotate-12"></div>
-                    </div>
+                    </div> */}
 
                     {/* Navigation */}
                     <nav className="hidden md:flex items-center space-x-6">
